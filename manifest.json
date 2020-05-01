@@ -1,0 +1,16 @@
+{
+  "name": "Simple Calculator",
+  "short_name": "Simp Calc",
+  "start_url": "https://olacalc.netlify.app",
+  "display": "standalone",
+  "background_color": "#0400BD",
+  "description": "A Simple calculator app built with javascript",
+  "theme_color": "#0400BD",
+  "icons": [
+    {
+      "src": ".frontend/images/ola.jpg",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
