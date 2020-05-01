@@ -7,7 +7,9 @@
 body{
     margin: 0;
     padding: 0;
-    background: linear-gradient(to right, #fce000, #2a2e65);
+    background: url(/frontend/images/ola.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #container{
@@ -25,6 +27,8 @@ body{
     border: 1px solid white;
     outline: none;
     background-color: rgba(255, 255, 255, .75);
+    background-size: contain;
+    color: #0400BD;
 }
 .span-two{
     grid-column: span 3;
@@ -32,11 +36,12 @@ body{
 }
 
 #container > button:hover{
-    background-color: rgba(255, 255, 255, .9);
+    background-color: rgba(255, 255, 255, .75);
+    color: #000;
 }
 .screen{
     grid-column: 1 /  -1;
-    background-color: rgba(0, 0, 0, .75);
+    background: linear-gradient(to right, #ffc51c, #0400BD);
     display: flex;
     align-items: flex-end;
     justify-content: space-around;
