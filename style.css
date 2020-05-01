@@ -1,0 +1,61 @@
+*::before, *::after{
+    box-sizing: border-box;
+    font-weight: normal;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: url(/frontend/images/ola.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#container{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+}
+
+#container  >  button{
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid white;
+    outline: none;
+    background-color: rgba(255, 255, 255, .75);
+    background-size: contain;
+    color: #0400BD;
+}
+.span-two{
+    grid-column: span 3;
+    padding: 5px;
+}
+
+#container > button:hover{
+    background-color: rgba(255, 255, 255, .75);
+    color: #000;
+}
+.screen{
+    grid-column: 1 /  -1;
+    background: linear-gradient(to right, #ffc51c, #0400BD);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-wrap: break-all;
+    }
+
+    .screen .prev{
+        color: rgba(255, 255, 255, .75);
+        font-size: 1.5rem;
+    }
+
+    .screen .current{
+        color: white;
+        font-size: 2.5rem;
+    }
