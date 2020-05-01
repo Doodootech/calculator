@@ -122,6 +122,10 @@ deleteButton.addEventListener('click', button =>{
     calculator.updateDisplay()
 })
 
+window.addEventListener('load', e => {
+  new PWAConfApp();
+  registerSW(); 
+});
 async function registerSW() { 
   if ('serviceWorker' in navigator) { 
     try {
