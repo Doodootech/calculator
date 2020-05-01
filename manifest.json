@@ -8,7 +8,7 @@
   "theme_color": "#0400BD",
   "icons": [
     {
-      "src": ".frontend/images/ola.jpg",
+      "src": "frontend/images/ola.jpg",
       "sizes": "512x512",
       "type": "image/png"
     }
